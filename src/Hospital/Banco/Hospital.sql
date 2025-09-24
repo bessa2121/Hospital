@@ -5,24 +5,6 @@ USE Hospital_BD;
 
 -- Desliga checagens de FK para garantir drop/creation sem bloqueios
 SET FOREIGN_KEY_CHECKS = 0;
-
-DROP TABLE IF EXISTS Consulta;
-DROP TABLE IF EXISTS Receita;
-DROP TABLE IF EXISTS Estoque_remedio;
-DROP TABLE IF EXISTS Remedio;
-DROP TABLE IF EXISTS Sala;
-DROP TABLE IF EXISTS Especialidade_medico;
-DROP TABLE IF EXISTS Especialidade_enfermeiro;
-DROP TABLE IF EXISTS Funcionario;
-DROP TABLE IF EXISTS Cargo;
-DROP TABLE IF EXISTS Paciente;
-
-SET FOREIGN_KEY_CHECKS = 1;
-
--- ==========================
--- Criação das tabelas (ordem correta)
--- ==========================
-
 CREATE TABLE Cargo (
     id_cargo INT NOT NULL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL UNIQUE
@@ -35,8 +17,8 @@ CREATE TABLE Paciente (
     telefone VARCHAR(15) NOT NULL,
     data_nascimento DATE NOT NULL,
     CPF CHAR(11) NOT NULL UNIQUE,
-    CEP CHAR(8) NOT NULL UNIQUE,
-    complemento_endereco VARCHAR(10) NOT NULL,
+    CEP CHAR(8) NOT NULL,
+    complemento_endereco VARCHAR(10),
     endereco VARCHAR(120) NOT NULL,
     RG CHAR(9) NOT NULL,
     UF_paciente CHAR(2) NOT NULL
@@ -51,14 +33,16 @@ CREATE TABLE Funcionario (
     data_nascimento DATE NOT NULL,
     CPF CHAR(11) NOT NULL UNIQUE,
     CEP CHAR(8) NOT NULL,
-    complemento_endereco VARCHAR(10) NOT NULL,
+    complemento_endereco VARCHAR(10),
     endereco VARCHAR(120) NOT NULL,
     RG CHAR(9) NOT NULL,
     UF_funcionario CHAR(2) NOT NULL,
     COREN VARCHAR(20),
     CRM VARCHAR(6),
-    -- CHECK pode ser ignorado em versões antigas do MySQL, mas mantive a intenção:
-    CONSTRAINT chk_crm_coren CHECK ((CRM IS NOT NULL AND COREN IS NULL) OR (CRM IS NULL AND COREN IS NOT NULL)),
+    CONSTRAINT chk_crm_coren CHECK (
+        (CRM IS NOT NULL AND COREN IS NULL) OR 
+        (CRM IS NULL AND COREN IS NOT NULL)
+    ),
     CONSTRAINT fk_funcionario_cargo FOREIGN KEY (id_cargo) REFERENCES Cargo(id_cargo)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -87,7 +71,7 @@ CREATE TABLE Sala (
 CREATE TABLE Remedio (
     id_remedio INT NOT NULL PRIMARY KEY,
     id_paciente INT NOT NULL,
-    nome_remedio VARCHAR(100) NOT NULL UNIQUE,
+    nome_remedio VARCHAR(100) NOT NULL,
     quantidade_ingerida VARCHAR(100) NOT NULL,
     CONSTRAINT fk_remedio_paciente FOREIGN KEY (id_paciente) REFERENCES Paciente(id_paciente)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -112,8 +96,6 @@ CREATE TABLE Receita (
     quantidade VARCHAR(50) NOT NULL,
     dosagem VARCHAR(50) NOT NULL,
     periodo_consumo VARCHAR(20) NOT NULL,
-    UF_paciente CHAR(2) NOT NULL,
-    UF_funcionario CHAR(2) NOT NULL,
     CONSTRAINT fk_receita_remedio FOREIGN KEY (id_remedio) REFERENCES Remedio(id_remedio),
     CONSTRAINT fk_receita_paciente FOREIGN KEY (id_paciente) REFERENCES Paciente(id_paciente),
     CONSTRAINT fk_receita_funcionario FOREIGN KEY (id_funcionario) REFERENCES Funcionario(id_funcionario)
@@ -124,7 +106,7 @@ CREATE TABLE Consulta (
     id_paciente INT NOT NULL,
     id_funcionario INT NOT NULL,
     id_sala INT NOT NULL,
-    id_receita INT NOT NULL,
+    id_receita INT NULL,
     temperatura DECIMAL(4,1) NOT NULL,
     pressao_arterial VARCHAR(7) NOT NULL,
     frequencia_cardiaca INT NOT NULL,
