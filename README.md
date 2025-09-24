@@ -1,6 +1,7 @@
 # Hospital
 Software do Projeto de Hospital - Aula de Banco de Dados e Desenvolvimento de Sistemas com Davi Villar 
 
+```bash
 package Hospital;
 
 public class Paciente {
@@ -127,6 +128,7 @@ public class HospitalApp {
         System.out.println("Paciente ID " + id + " atualizado.");
     }
 }
+```
 
 # Guia de Trabalho com Branches Git - Projeto Hospital
 
