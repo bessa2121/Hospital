@@ -42,8 +42,8 @@ public class Paciente {
         return "Paciente [id=" + idPaciente + ", nome=" + nome + "]";
     }
 }
-
-
+```
+```bash
 
 import java.sql.Connection;
 import java.sql.DriverManager;
