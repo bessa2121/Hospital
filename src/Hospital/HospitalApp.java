@@ -8,7 +8,7 @@ package Hospital;
  *
  * @author DAVI
  */
-public class Hospital {
+public class HospitalApp {
 
     /**
      * @param args the command line arguments
