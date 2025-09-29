@@ -242,8 +242,8 @@ git merge main
 git push origin grupoX-nome-do-grupo
 ```
 ## 9. Divisão dos arquivos por grupo (sugestão)
-- Grupo 1	Remedio.java, Receita.java
-- Grupo 2	Consulta.java, Paciente.java
+- Grupo 1	Especialidade_medico.java, Especialidade_enfermeiro.java
+- Grupo 2	Estoque_remedio.java, Sala.java
 - Grupo 3	Funcionario.java, Cargo.java
-- Grupo 4	Especialidade_medico.java, Especialidade_enfermeiro.java
-- Grupo 5	Estoque_remedio.java, Sala.java
+- Grupo 4	Remedio.java, Receita.java
+- Grupo 5	Consulta.java, Paciente.java
