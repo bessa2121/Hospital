@@ -9,7 +9,7 @@ package Hospital;
  * @author DAVI
  */
 public class Cargo {
-    private int idCargo;
+    private int id_cargo;
     private String nome;
     
     public Cargo() {}
@@ -19,14 +19,14 @@ public class Cargo {
         this.nome = nome;
     }
 
-    public int getidCargo() {return idCargo;}
-    public void setidCargo(int idCargo) {this.idCargo = idCargo;}
+    public int getid_cargo() {return id_cargo;}
+    public void setid_cargo(int id_cargo) {this.id_cargo = id_cargo;}
     
     public String getnome() {return nome;}
     public void setnome(String nome) {this.nome = nome;}
     
     @Override
     public String toString() {
-        return "Cargo [id=" + idCargo + ", nome" + nome + "]";
+        return "Cargo [id=" + id_cargo + ", nome" + nome + "]";
     }
 }
