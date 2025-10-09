@@ -9,24 +9,24 @@ package Hospital;
  * @author DAVI
  */
 public class Cargo {
-    private int id_cargo;
-    private String nome;
+    private int IdCargo;
+    private String Nome;
     
     public Cargo() {}
     
-    public Cargo(int idCargo, String nome) {
-        this.idCargo = idCargo;
-        this.nome = nome;
+    public Cargo(int IdCargo, String Nome) {
+        this.IdCargo = IdCargo;
+        this.Nome = Nome;
     }
 
-    public int getid_cargo() {return id_cargo;}
-    public void setid_cargo(int id_cargo) {this.id_cargo = id_cargo;}
+    public int getIdcargo() {return IdCargo;}
+    public void setIdcargo(int IdCargo) {this.IdCargo = IdCargo;}
     
-    public String getnome() {return nome;}
-    public void setnome(String nome) {this.nome = nome;}
+    public String getNome() {return Nome;}
+    public void setNome(String Nome) {this.Nome = Nome;}
     
     @Override
     public String toString() {
-        return "Cargo [id=" + id_cargo + ", nome" + nome + "]";
+        return "Cargo [id=" + IdCargo + ", Nome" + Nome + "]";
     }
 }
