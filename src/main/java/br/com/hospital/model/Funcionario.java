@@ -9,80 +9,80 @@ package Hospital;
  * @author DAVI
  */
 public class Funcionario {
-    private int id_funcionario;
-    private int id_cargo;
-    private String nome;
-    private String sexo;
-    private String telefone;
-    private date data_nascimento;
-    private String cpf;
-    private String rg;
-    private String endereco;
-    private String cep;
-    private String uf;
-    private String crm;
-    private String coren;
+    private int IdFuncionario;
+    private int IdCargo;
+    private String Nome;
+    private String Sexo;
+    private String Telefone;
+    private Date DataNascimento;
+    private String Cpf;
+    private String Rg;
+    private String Endereco;
+    private String Cep;
+    private String Uf;
+    private String Crm;
+    private String Coren;
     
     public  Funcionario() {}
     
-    public Funcionario(int id_funcionario, int id_cargo, String nome, String sexo, String telefone, date data_nascimento, String cpf, String rg, String endereco, String cep, String uf, String crm, String coren) {
-        this.idFuncionario = id_funcionario;
-        this.id_cargo = id_cargo;
-        this.nome = nome;
-        this.sexo = sexo;
-        this.telefone = telefone;
-        this.data_nascimento = data_nascimento;
-        this.cpf = cpf;
-        this.rg = rg;
-        this.endereco = endereco;
-        this.cep = cep;
-        this.uf = uf;
-        this.crm = crm;
-        this.coren = coren;
+    public Funcionario(int IdFuncionario, int IdCargo, String Nome, String Sexo, String Telefone, date DataNascimento, String Cpf, String Rg, String Endereco, String Cep, String Uf, String Crm, String Coren) {
+        this.IdFuncionario = IdFuncionario;
+        this.IdCargo = IdCargo;
+        this.Nome = Nome;
+        this.Sexo = Sexo;
+        this.Telefone = Telefone;
+        this.DataNascimento = DataNascimento;
+        this.Cpf = Cpf;
+        this.Rg = Rg;
+        this.Endereco = Endereco;
+        this.Cep = Cep;
+        this.Uf = Uf;
+        this.Crm = Crm;
+        this.Coren = Coren;
     }
     
     
-    public int getid_funcionario() {return id_funcionario;}
-    public void setid_funcionario(int id_funcionario) {this.id_funcionario = id_funcionario;}
+    public int getIdFuncionario() {return IdFuncionario;}
+    public void setIdFuncionario(int IdFuncionario) {this.IdFuncionario = IdFuncionario;}
 
-    public int getid_cargo() {return id_cargo;}
-    public void setid_cargo(int id_cargo) {this.id_cargo = id_cargo;}
+    public int getIdCargo() {return IdCargo;}
+    public void setIdCargo(int IdCargo) {this.IdCargo = IdCargo;}
     
-    public String getnome() {return nome;}
-    public void setnome(String nome) {this.nome = nome;}
+    public String getNome() {return Nome;}
+    public void setNome(String Nome) {this.Nome = Nome;}
 
-    public String getsexo() {return sexo;}
-    public void setsexo(String sexo) {this.sexo = sexo;}
+    public String getSexo() {return Sexo;}
+    public void setSexo(String Sexo) {this.Sexo = Sexo;}
     
-    public String gettelefone() {return telefone;}
-    public void settelefone(String telefone) {this.telefone = telefone;}
+    public String getTelefone() {return Telefone;}
+    public void setTelefone(String Telefone) {this.Telefone = Telefone;}
     
-    public date getdata_nascimento() {return data_nascimento;}
-    public void setdata_nascimento(date data_nascimento) {this.data_nascimento = data_nascimento;}
+    public Date getDataNascimento() {return DataNascimento;}
+    public void setDataNascimento(date DataNascimento) {this.DataNascimento = DataNascimento;}
 
-    public String getcpf() {return cpf;}
-    public void setcpf(String cpf) {this.cpf = cpf;}
+    public String getCpf() {return Cpf;}
+    public void setCpf(String Cpf) {this.Cpf = Cpf;}
 
-    public String getrg() {return rg;}
-    public void setrg(String rg) {this.rg = rg;}
+    public String getRg() {return Rg;}
+    public void setRg(String Rg) {this.Rg = Rg;}
 
-    public String getendereco() {return endereco;}
-    public void setendereco(String endereco) {this.endereco = endereco;}
+    public String getEndereco() {return Endereco;}
+    public void setEndereco(String Endereco) {this.Endereco = Endereco;}
 
-    public String getcep() {return cep;}
-    public void setcep(String cep) {this.cep = cep;}
+    public String getCep() {return Cep;}
+    public void setCep(String Cep) {this.Cep = Cep;}
 
-    public String getuf() {return uf;}
-    public void setuf(String uf) {this.uf = uf;}
+    public String getUf() {return Uf;}
+    public void setUf(String Uf) {this.Uf = Uf;}
     
-    public String getcrm() {return crm;}
-    public void setcrm(String crm) {this.crm = crm;}
+    public String getCrm() {return Crm;}
+    public void setCrm(String Crm) {this.Crm = Crm;}
     
-    public String getcoren() {return coren;}
-    public void setcoren(String coren) {this.coren = coren;}
+    public String getCoren() {return Coren;}
+    public void setCoren(String Coren) {this.Coren = Coren;}
     
     @Override
     public String toString() {
-        return "Funcionario [id=" + idFuncionario + ", nome" + nome + "]";
+        return "Funcionario [id=" + IdFuncionario + ", nome" + Nome + "]";
     }
 }
