@@ -10,7 +10,7 @@ public class SalaRepository {
         String sql = "INSERT INTO Sala (idSala, idFuncionario) VALUES (?,?)";
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
-            ps.setString(1, obj.getIdSala()); ps.setString(2, obj.IdFuncionario());
+            ps.setString(1, obj.getIdSala()); ps.setString(2, obj.getIdFuncionario());
             ps.executeUpdate();
         }
     }
@@ -22,7 +22,7 @@ public class SalaRepository {
              Statement st = conn.createStatement();
              ResultSet rs = st.executeQuery(sql)) {
             while (rs.next()) {
-                br.com.hospital.model.Sala obj = new br.com.hospital.model.Sala(); obj.setIdSala(rs.getInt("id_sala")); obj.setIdFuncionario(rs.getString("id_funcionario"));
+                br.com.hospital.model.Sala obj = new br.com.hospital.model.Sala(); obj.setIdSala(rs.getInt("id_sala")); obj.setIdFuncionario(rs.getInt("id_funcionario"));
                 lista.add(obj);
             }
         }
