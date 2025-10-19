@@ -52,4 +52,9 @@ public class ReceitaRemedio {
         this.periodo = periodo;
     }
 
+    @Override
+    public String toString(){
+        return "ReceitaRemedio [id_receita = "+ id_receita + ", id_remedio = "+ id_remedio + ",quantidade = "+ quantidade +", dosagem = " + dosagem +", período = " + periodo +"]"
+    }
+
 }

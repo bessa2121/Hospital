@@ -33,4 +33,9 @@ public class Remedio {
     public void setDescricao(string descricao){
         this.descricao = descricao;
     }
+    
+    @Override
+    public String toString(){
+        return "Remedio [id_remedio = " + id_remedio +", nome = "+ nome +", descricao = "+ descricao +"]"
+    }
 }
