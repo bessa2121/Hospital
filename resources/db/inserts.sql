@@ -25,7 +25,19 @@ INSERT INTO Sala (numero, id_funcionario) VALUES
 INSERT INTO Remedio (nome, descricao) VALUES
 ('Paracetamol', 'Analgésico e antitérmico'),
 ('Amoxicilina', 'Antibiótico'),
-('Dipirona', 'Analgésico e antitérmico');
+('Dipirona', 'Analgésico e antitérmico'),
+('Ibuprofeno', 'Anti-inflamatório e analgésico utilizado para dor e febre'),
+('Losartana', 'Anti-hipertensivo usado para controle da pressão arterial'),
+('Omeprazol', 'Reduz a acidez do estômago e trata refluxo gastroesofágico'),
+('Metformina', 'Antidiabético oral que auxilia no controle da glicemia'),
+('Simvastatina', 'Reduz os níveis de colesterol e triglicerídeos no sangue'),
+('Azitromicina', 'Antibiótico indicado para infecções bacterianas'),
+('Diclofenaco', 'Anti-inflamatório e analgésico para dores musculares e articulares'),
+('Lorazepam', 'Ansiolítico utilizado para tratar ansiedade e insônia'),
+('Cetirizina', 'Antialérgico indicado para rinite e urticária'),
+('Hidroclorotiazida', 'Diurético usado para tratar hipertensão e retenção de líquidos'),
+('Prednisona', 'Corticosteroide usado para tratar inflamações e alergias'),
+('Salbutamol', 'Broncodilatador usado para crises de asma e doenças respiratórias');
 -- Estoque
 INSERT INTO Estoque (id_remedio, quantidade, data_entrada, data_validade) VALUES
 (1, 100, '2025-01-01', '2026-01-01'),
