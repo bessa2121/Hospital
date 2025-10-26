@@ -1,3 +1,5 @@
+package Hospital;
+
 public class Medico_Especialidade {
     private int idMedico;
     private String nome;
