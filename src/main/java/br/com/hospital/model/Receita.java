@@ -1,59 +1,28 @@
 package br.com.hospital.model;
 
+import java.sql.Date;
+
 public class Receita {
-    private int id_receita;
-    private int id_paciente;
-    private int id_funcionario;
-    private date data_emissao;
-    private string observacoes;
+    private int idReceita;
+    private int idPaciente;
+    private int idFuncionario;
+    private Date dataEmissao;
+    private String observacoes;
 
-    public Receita(){}
-    public Receita(int id_receita,int id_paciente, int id_funcionario, date data_emissao, string observacoes){
-        this.id_receita = id_receita;
-        this.id_paciente = id_paciente;
-        this.id_funcionario = id_funcionario;
-        this.data_emissao = data_emissao;
-        this.observacoes = observacoes;
-    }
+    public Receita() {}
 
-    //Getters e Setters
-    public int getIdReceita(int id_receita){
-        return id_receita;
-    }
-    public void setIdReceita(int id_receita){
-        this.id_receita = id_receita;
-        }
-    
-    public int getIdPaciente(int id_paciente){
-        return id_paciente;
-    }
-    public void setIdPaciente(int id_paciente){
-        this.id_paciente = id_paciente;
-    }
+    public int getIdReceita() { return idReceita; }
+    public void setIdReceita(int idReceita) { this.idReceita = idReceita; }
 
-    public int getIdFuncionario(id_funcionario){
-        return id_funcionario;
-    }
-    public void setIdFuncionario(int id_funcionario){
-        this.id_funcionario = id_funcionario;
-    }
+    public int getIdPaciente() { return idPaciente; }
+    public void setIdPaciente(int idPaciente) { this.idPaciente = idPaciente; }
 
-    public date getDataEmissao(date data_emissao){
-        return data_emissao;
-    }
-    public void setDataEmissao(date data_emissao){
-        this.data_emissao = data_emissao;
-    }
+    public int getIdFuncionario() { return idFuncionario; }
+    public void setIdFuncionario(int idFuncionario) { this.idFuncionario = idFuncionario; }
 
-    public string getObservacoes(string observacoes){
-        return observacoes;
-    }
-    public void setObservacoes(string observacoes){
-        this.observacoes = observacoes;
-    }
+    public Date getDataEmissao() { return dataEmissao; }
+    public void setDataEmissao(Date dataEmissao) { this.dataEmissao = dataEmissao; }
 
-    @Override
-    public String toString(){
-    return "Receita [id_receita = "+ id_receita+", id_paciente = "+id_paciente+", id_funcionario = "+ id_funcionario+", data = "+data_emissao+" Observações = "+observacoes"         ]"
-    }
+    public String getObservacoes() { return observacoes; }
+    public void setObservacoes(String observacoes) { this.observacoes = observacoes; }
 }

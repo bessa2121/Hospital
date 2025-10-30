@@ -1,32 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
- */
-package Hospital;
+package br.com.hospital.model;
 
-/**
- *
- * @author DAVI
- */
 public class Cargo {
-    private int IdCargo;
-    private String Nome;
-    
+    private int idCargo;
+    private String nome;
+
     public Cargo() {}
-    
-    public Cargo(int IdCargo, String Nome) {
-        this.IdCargo = IdCargo;
-        this.Nome = Nome;
+
+    public Cargo(int idCargo, String nome) {
+        this.idCargo = idCargo;
+        this.nome = nome;
     }
 
-    public int getIdcargo() {return IdCargo;}
-    public void setIdcargo(int IdCargo) {this.IdCargo = IdCargo;}
-    
-    public String getNome() {return Nome;}
-    public void setNome(String Nome) {this.Nome = Nome;}
-    
-    @Override
-    public String toString() {
-        return "Cargo [id=" + IdCargo + ", Nome" + Nome + "]";
-    }
+    public int getIdCargo() { return idCargo; }
+    public void setIdCargo(int idCargo) { this.idCargo = idCargo; }
+
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
 }

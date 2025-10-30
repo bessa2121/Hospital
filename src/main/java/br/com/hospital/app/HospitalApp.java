@@ -1,10 +1,10 @@
 package br.com.hospital.app;
 
-import br.com.hospital.ui.ConsoleUI;
+import br.com.hospital.ui.PacienteUI;
 
 public class HospitalApp {
     public static void main(String[] args) {
-        ConsoleUI ui = new ConsoleUI();
+        PacienteUI ui = new PacienteUI();
         ui.menu();
     }
 }

@@ -6,13 +6,13 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
-public class ConsoleUI {
+public class PacienteUI {
     private final PacienteService pacienteService = new PacienteService();
     private final Scanner sc = new Scanner(System.in);
 
     public void menu() {
         while (true) {
-            System.out.println("\n=== Hospital ===");
+            System.out.println("\n=== Hospital (Console) ===");
             System.out.println("1 - Listar pacientes");
             System.out.println("2 - Inserir paciente");
             System.out.println("0 - Sair");

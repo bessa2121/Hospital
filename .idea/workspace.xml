@@ -4,21 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b04b0ed-f44e-4f9a-87b9-9779705d6c50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Banco/Hospital.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Cargo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Consulta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Especialidade_enfermeiro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Especialidade_medico.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Estoque_remedio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Funcionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/HospitalApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Paciente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Receita.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Remedio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Sala.java" beforeDir="false" />
+    <list default="true" id="f4b8a0ab-a41c-49a8-ac29-861d04175bab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/db/inserts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db/inserts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/db/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db/queries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/db/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/app/HospitalApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/app/HospitalApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Cargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Cargo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Consulta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Receita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/ReceitaRemedio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/ReceitaRemedio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Remedio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Remedio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/model/Sala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/CargoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/ConsultaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/ConsultaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/EstoqueRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/EstoqueRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/FuncionarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/FuncionarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/PacienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/ReceitaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/ReceitaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/RemedioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/RemedioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/repository/SalaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/CargoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/ConsultaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/ConsultaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/EstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/EstoqueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/FuncionarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/FuncionarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/ReceitaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/ReceitaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/RemedioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/RemedioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/service/SalaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/hospital/ui/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/hospital/ui/PacienteUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hospital-app-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,27 +55,20 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="33goQ2MbuxW4naT2J2q9kXbQYNH" />
+  <component name="ProjectId" id="33ZTYGHqtwHWqMi8ZQWm7KHc7Z8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="HospitalApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.hospital.app.HospitalApp" />
-      <module name="hospital-app" />
+      <module name="Hospital" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.hospital.app.*" />
@@ -71,11 +88,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8b04b0ed-f44e-4f9a-87b9-9779705d6c50" name="Changes" comment="" />
-      <created>1759748058086</created>
+      <changelist id="f4b8a0ab-a41c-49a8-ac29-861d04175bab" name="Changes" comment="" />
+      <created>1759523640074</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1759748058086</updated>
+      <updated>1759523640074</updated>
     </task>
     <servers />
   </component>

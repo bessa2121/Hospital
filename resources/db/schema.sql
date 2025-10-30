@@ -1,4 +1,4 @@
-    -- Reset do banco
+-- Reset do banco
 DROP DATABASE IF EXISTS Hospital_BD;
 CREATE DATABASE Hospital_BD CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE Hospital_BD;

@@ -1,41 +1,18 @@
 package br.com.hospital.model;
 
 public class Remedio {
-    private int id_remedio;
-    private string nome;
-    private string descricao;
+    private int idRemedio;
+    private String nomeRemedio;
+    private String descricao;
 
-    public Remedio(){}
-    public Remedio(int id_remedio, string nome, string descricao){
-        this.id_remedio = remedio;
-        this.nome = nome;
-        this.descricao = descricao;
-    }
+    public Remedio() {}
 
-    //GETTER E SETTERS
-    public int getIdRemedio(int id_remedio){
-        return remedio;
-    }
-    public void setIdRemedeio(int id_remedio){
-        this.id_remedio = id_remedio;
-    }
+    public int getIdRemedio() { return idRemedio; }
+    public void setIdRemedio(int idRemedio) { this.idRemedio = idRemedio; }
 
-    public string getNome(string nome){
-        return nome;
-    }
-    public void setNome(string nome){
-        this.nome = nome;
-    }
+    public String getNomeRemedio() { return nomeRemedio; }
+    public void setNomeRemedio(String nomeRemedio) { this.nomeRemedio = nomeRemedio; }
 
-    public string getDescricao(string descricao){
-        return descricao;
-    }
-    public void setDescricao(string descricao){
-        this.descricao = descricao;
-    }
-    
-    @Override
-    public String toString(){
-        return "Remedio [id_remedio = " + id_remedio +", nome = "+ nome +", descricao = "+ descricao +"]"
-    }
+    public String getDescricao() { return descricao; }
+    public void setDescricao(String descricao) { this.descricao = descricao; }
 }

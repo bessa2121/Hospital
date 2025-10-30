@@ -1,36 +1,28 @@
 package br.com.hospital.model;
 
+import java.sql.Date;
+
 public class Estoque {
-        private int IdEstoque;
-        private String DataValidade;
-        private int Quantidade;
-        private String DataEntrada;
+    private int idEstoque;
+    private int idRemedio;
+    private int quantidade;
+    private Date dataEntrada;
+    private Date dataValidade;
 
-        public Estoque() {}
+    public Estoque() {}
 
-        public Estoque(int IdEstoque, String DataValidade, int Quantidade, String DataEntrada){
-              this.IdEstoque = IdEstoque;
-              this.DataValidade = DataValidade;
-              this.Quantidade = Quantidade;
-              this.DataEntrada = DataEntrada;
-        }
+    public int getIdEstoque() { return idEstoque; }
+    public void setIdEstoque(int idEstoque) { this.idEstoque = idEstoque; }
 
-        // Getters e Setters
+    public int getIdRemedio() { return idRemedio; }
+    public void setIdRemedio(int idRemedio) { this.idRemedio = idRemedio; }
 
-        public int getIdEstoque(){ return IdEstoque;}
-        public void setIdEstoque(int IdEstoque) { this.IdEstoque = IdEstoque;}
+    public int getQuantidade() { return quantidade; }
+    public void setQuantidade(int quantidade) { this.quantidade = quantidade; }
 
-        public String getDataValidade() { return DataValidade;}
-        public void setDataValidade(String DataValidade) {this.DataValidade = DataValidade}
+    public Date getDataEntrada() { return dataEntrada; }
+    public void setDataEntrada(Date dataEntrada) { this.dataEntrada = dataEntrada; }
 
-        public Int getQuantidade() {return Quantidade;}
-        public void setQuantidade(Int Quantidade) {this.Quantidade = Quantidade}
-
-        public String getDataEntrada() {return DataEntrada;}
-        public void setDataEntrada(String DataEntrada) {this.DataEntrada = DataEntrada}
-
-        @Override
-        public String toString() {
-            return "Estoque [id="+ IdEstoque+", Data de entrada"+DataEntrada+", Quantidade "+Quantidade+", Data Validade"+DataValidade+"]";
-        }  
+    public Date getDataValidade() { return dataValidade; }
+    public void setDataValidade(Date dataValidade) { this.dataValidade = dataValidade; }
 }
